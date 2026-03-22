@@ -12,7 +12,7 @@ def Dashboard():
 
     st.title("Cowrie HoneyPot Dashboard")
 
-    df = pd.read_csv("cowrie.csv", names=["timestamp","src_ip", "username", "password","country", "latitude", "longitude"])
+    df = pd.read_csv("data/cowrie.csv", names=["timestamp","src_ip", "username", "password","country", "latitude", "longitude"])
 
     st.subheader("Most Used Passwords")
     df_password_used = df['password'].value_counts().sort_values(ascending=False).head(10)

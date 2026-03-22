@@ -8,7 +8,7 @@ log = logging.getLogger(__name__)
 
 files = glob.glob("cowrie.json*")
 
-with open("cowrie.csv","a") as log_data:
+with open("data/cowrie.csv","a") as log_data:
 
     for file in files:
         with open(file, "r") as f:
