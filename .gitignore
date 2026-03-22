@@ -1,0 +1,16 @@
+# Python environment and cache
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Honeypot Data & Logs (Ignore all logs and large JSON/CSV files)
+*.log*
+cowrie.json*
+*.csv
+
+# Database/GeoIP folders
+GeoLite2-City_*/
+
+# EXCEPTIONS: Allow the specific sample file
+!sample-cowrie-log.json

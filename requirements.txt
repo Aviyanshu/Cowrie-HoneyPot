@@ -1,0 +1,5 @@
+pandas
+geoip2
+streamlit
+folium
+streamlit-folium

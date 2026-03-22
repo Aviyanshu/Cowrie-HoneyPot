@@ -1,0 +1,25 @@
+[
+    {
+        "eventid": "cowrie.login.failed",
+        "username": "orangepi",
+        "password": "orangepi",
+        "message": "login attempt [orangepi/orangepi] failed",
+        "sensor": "ip-172-31-78-238",
+        "uuid": "01bb4fd4-1a4e-11f1-a414-6f367ff9aa56",
+        "timestamp": "2026-03-08T14:41:14.035583Z",
+        "src_ip": "65.109.217.52",
+        "session": "840af1568868",
+        "protocol": "ssh"
+    },
+    {
+        "eventid": "cowrie.client.version",
+        "version": "SSH-2.0-libssh2_1.11.1",
+        "message": "Remote SSH version: SSH-2.0-libssh2_1.11.1",
+        "sensor": "ip-172-31-78-238",
+        "uuid": "01bb4fd4-1a4e-11f1-a414-6f367ff9aa56",
+        "timestamp": "2026-03-08T14:41:45.253806Z",
+        "src_ip": "65.109.217.52",
+        "session": "0b5272fc583a",
+        "protocol": "ssh"
+    }
+]
