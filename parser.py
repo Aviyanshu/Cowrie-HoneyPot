@@ -1,6 +1,7 @@
 import json
 import logging
 import glob
+from geo_ip_lookup import GeoIPLookup
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -28,7 +29,8 @@ with open("cowrie.csv","a") as log_data:
                                 Password: {event['password']}; 
                                 """)
                         if event['src_ip'] != "127.0.0.1":
-                            log_data.write(f"{event['timestamp']},{event['src_ip']},{event['username']},{event['password']}\n")  
+                            location = GeoIPLookup(event['src_ip'])
+                            log_data.write(f"{event['timestamp']},{event['src_ip']},{event['username']},{event['password']},{location['country']},{location['latitude']},{location['longitude']}\n")  
                         
                 except json.JSONDecodeError:
                     log.error(f"Failed to parse event: {event}")

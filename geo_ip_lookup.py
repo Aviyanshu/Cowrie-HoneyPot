@@ -24,17 +24,8 @@ def GeoIPLookup(ip_address):
             "latitude": response.location.latitude,
             "longitude": response.location.longitude
         }
-        # country = response.country.name
-        # city = response.city.name
-        # latitude = response.location.latitude
-        # longitude = response.location.longitude
 
-        # log.info(f"IP Address: {ip_address}")
-        # log.info(f"Country: {country}")
-        # log.info(f"City: {city}")
-        # log.info(f"Latitude: {latitude}")
-        # log.info(f"Longitude: {longitude}")
-
+        # Return the result as a dictionary
         return result
 
     except Exception as e:
