@@ -7,7 +7,6 @@ venv/
 # Honeypot Data & Logs (Ignore all logs and large JSON/CSV files)
 *.log*
 cowrie.json*
-*.csv
 
 # Database/GeoIP folders
 GeoLite2-City_*/
