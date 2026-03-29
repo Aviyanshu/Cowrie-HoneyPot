@@ -28,7 +28,7 @@ def Dashboard():
              7. Streamlit-Folium: For integrating Folium maps into Streamlit
              """)
 
-    df = pd.read_csv("data/cowrie.csv", names=["timestamp","src_ip", "username", "password","country", "latitude", "longitude"], engine='python', on_bad_lines='skip')
+    df = pd.read_csv("./data/cowrie.csv", names=["timestamp","src_ip", "username", "password","country", "latitude", "longitude"], engine='python', on_bad_lines='skip')
 
     st.subheader("Most Used Passwords")
 
