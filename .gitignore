@@ -5,6 +5,7 @@ venv/
 .env
 
 # Honeypot Data & Logs (Ignore all logs and large JSON/CSV files)
+cowrie/
 *.log*
 cowrie.json*
 
