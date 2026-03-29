@@ -36,3 +36,5 @@ def Parser():
                     except json.JSONDecodeError:
                         log.error(f"Failed to parse event: {event}")
                         continue
+
+parser = Parser()

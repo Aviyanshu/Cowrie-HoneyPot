@@ -5,8 +5,6 @@ from geo_ip_lookup import GeoIPLookup
 import folium
 import streamlit_folium
 
-from parser import Parser
-
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
@@ -80,7 +78,5 @@ def Dashboard():
     st.write("""
              The line chart above shows the timeline of login attempts. There is a regular pattern of login attempts with peaks at certain times until `March 22` where there is a huge spike in login attempts. On further analysing the data, it was found that the spike was from Indonesia, which is the country with the most login attempts. This spike could be due to a specific attack campaign. Otherwise the overall pattern of login attempts is relatively consistent. 
              """)
-
-parser = Parser()
 
 dashboard = Dashboard()
